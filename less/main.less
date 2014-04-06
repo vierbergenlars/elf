@@ -1,0 +1,95 @@
+@import "variables.less";
+@import "prefixer.less";
+/**
+ * General styles
+ *
+ * Note: All references to 17px in this section are linked to the height of the saw images.
+ */
+ 
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	margin-top: -@sawed-image-height;
+}
+
+article {
+	&:before {
+		position: relative;
+		display: block;
+		height: @sawed-image-height;
+		top: -@sawed-image-height;
+		content: '';
+	}
+	
+	width: 100%;
+	padding-bottom: @sawed-image-height;
+}
+
+article h2 {
+	text-align: center;
+}
+
+article h2 a {
+	/* Hide linkified titles */
+	text-decoration: none;
+	cursor: default;
+	color: inherit;
+}
+
+article .anchor-position-fixer {
+	position: relative;
+	top: -(@navbar-height+@sawed-image-height+20px);
+}
+
+/**
+ * SECTION: Header
+ */
+header {
+	padding-top: @navbar-height;
+	background: url("../img/atrium.jpg") center;
+	.background-size(cover);
+	.border-box;
+	min-height: 100%;
+	overflow: hidden;
+	margin: 0;
+}
+
+
+/**
+ * SECTION: Programma
+ */
+#sec-prog {
+	&:before {
+		background: url("../img/checkered-paper-saw-12x4-top.png");
+	}
+	h2 {
+		font-family: 'designer_notesbold';
+		font-size: 30px;
+		/* Align h2 to checkered paper */
+		padding-top: 1px;
+		/* Align text to checkered paper */
+		padding-bottom: 7px;
+			
+	}
+	
+	background: url("../img/checkered-paper.png");
+	font-family: 'designer_notesregular';
+	
+	p {
+		font-size: @sawed-image-height;
+		line-height: @sawed-image-height;
+		margin: @sawed-image-height 0;
+	}
+}
+
+#sec-team {
+	&:before {
+		background: url("../img/album-paper-saw-12x4-top.png");	
+	}
+	background: url("../img/album-paper.png"); 
+}

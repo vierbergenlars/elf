@@ -368,8 +368,13 @@
     "thumbnails.less",
     "list-group.less",
     "panels.less",
+    "component-animations.less",
     "utilities.less",
     "responsive-utilities.less"
   ],
-  "js": []
+  "js": [
+    "collapse.js",
+    "scrollspy.js",
+    "transition.js"
+  ]
 }
