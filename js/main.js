@@ -6,7 +6,9 @@ $('a').on('click', function(event) {
 		$.scrollTo($(href), 800, {onAfter: function() {document.location.hash = href;}});
 		event.preventDefault();
 	}
-	
 });
 
+$('.flip-container').on('touchstart', function() {
+	$(this).toggleClass('hover');
+});
 
