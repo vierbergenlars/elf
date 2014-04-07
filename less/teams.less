@@ -8,10 +8,10 @@
 		}
 		.flip-frontside {
 			background-image: url("../img/team/@{team}.jpg");
-			background-color: hsl(`Math.floor(Math.random()*10)*36`, 40%, 60%);
+			background-color: hsl(`Math.floor(Math.random()*10)*36`, 40%, 50%);
 		}
 		.flip-backside {
-			.flip-frontside;
+			background-color: hsl(`Math.floor(Math.random()*10)*36`, 40%, 70%);
 		}
 	}
 }
@@ -40,6 +40,15 @@
 			right: 0;
 			padding: 5px 15px;
 			background-color: rgba(100%, 100%, 100%, 40%);
+		}
+	}
+	@media (max-width: @screen-xs-max) {
+		/* Hide ugly middle border when flipping cards are expanded */
+		.flip-backside {
+			border-left-width: 0;
+		}
+		.flip-frontside {
+			border-right-width: 0;
 		}
 	}
 	.flip-container {
