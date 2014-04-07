@@ -8,7 +8,6 @@ $('a').on('click', function(event) {
 	}
 });
 
-$('.flip-container').on('touchstart', function() {
+$('.flip-container').on('touchstart click', function() {
 	$(this).toggleClass('hover');
 });
-
