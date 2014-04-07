@@ -1,0 +1,58 @@
+@import "variables";
+@import "prefixer";
+
+.team(@team) {
+	.team-pic-@{team} {
+		.flip-container, .flip-frontside, .flip-backside {
+			height: @team-pic-height;
+		}
+		.flip-frontside {
+			background-image: url("../img/team/@{team}.jpg");
+			background-color: hsl(`Math.floor(Math.random()*10)*36`, 40%, 60%);
+		}
+		.flip-backside {
+			.flip-frontside;
+		}
+	}
+}
+
+.team(praeses) {
+	.team-pic-praeses {
+		.flip-container, .flip-frontside, .flip-backside {
+			height: @team-pic-praeses-height;
+		}
+	}
+}
+
+
+.team-pic {
+	.flip-backside {
+		border: 2px solid white;
+	}
+	.flip-frontside {
+		.flip-backside;
+		.background-size(cover);
+		background-position: center;
+		h3 {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			padding: 5px 15px;
+			background-color: rgba(100%, 100%, 100%, 40%);
+		}
+	}
+	.flip-container {
+		margin-top: @team-pic-h-margin;
+		margin-bottom: @team-pic-h-margin;
+	}
+}
+
+/* Team definitions */
+.team(praeses);
+.team(vice);
+.team(kd);
+.team(br);
+.team(ir);
+.team(q);
+.team(pc);
