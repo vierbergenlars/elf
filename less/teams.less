@@ -52,8 +52,16 @@
 		}
 	}
 	.flip-container {
-		margin-top: @team-pic-h-margin;
-		margin-bottom: @team-pic-h-margin;
+		/* We cannot just use margin: @team-pic-margin/2 here!
+		 * The bootstrap grid system uses negative horizontal margins on .row to remove 
+		 * the margins set by .col-*-* as gutter (They are sized @grid-gutter-width/2 of course!).
+		 * And guess what: .flip-container is also a .row
+		 * If we would just set the margin, we end up with huge horizontal margins.
+		 * 
+		 * And why we divide @team-pic-margin by 2?
+		 * Because the total margin consists of half of it on both siblings.
+		 */
+		margin: @team-pic-margin/2 (@team-pic-margin - @grid-gutter-width)/2;		
 	}
 }
 
