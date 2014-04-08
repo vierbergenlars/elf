@@ -12,33 +12,23 @@
  * (max-width: @screen-xxs-max), (min-width: @screen-sm-min)
  */
 @media (min-width: @screen-sm-min), (max-width: @screen-xxs-max) {
-
+	/* Css animation/transformation not supported. Fall back to just put the back before the front on hover/click */
 	.flip-container {
 		&:hover, &.hover {
 			/* entire container, keeps perspective */
 			.flip-backside {
-				.transform(rotateY(0deg));
-			}
-			.flip-frontside {
-				.transform(rotateY(180deg));
+				z-index: 3;
 			}
 		}
-		.perspective(1000);
-		.transform-style(preserve-3d);
 	}
 	
 	/* flip speed goes here */
 	.flipper {
-		.transition(0.6s);
-		.transform-style(preserve-3d);
 		position: relative;
 	}
 	
 	/* hide back of pane during swap */
 	.flip-frontside, .flip-backside {
-		.backface-visibility(hidden);
-		.transition(0.6s);
-		.transform-style(preserve-3d);
 		top: 0;
 		left: 0;
 		position: absolute;
@@ -47,11 +37,56 @@
 	/*  UPDATED! front pane, placed above back */
 	.flip-frontside {
 		z-index: 2;
-		.transform(rotateY(0deg));
 	}
 	
 	/* back, initially hidden pane */
 	.flip-backside {
-		.transform(rotateY(-180deg));
+		z-index: 1;
+	}
+	
+	.csstransitions.csstransforms3d {
+		/* Only do this flipping effect on supported browsers */
+		.flip-container {
+			&:hover, &.hover {
+				/* entire container, keeps perspective */
+				.flip-backside {
+					z-index: 1; // Cancel the z-index 3 for non-supporting browsers
+					.transform(rotateY(0deg));
+				}
+				.flip-frontside {
+					.transform(rotateY(180deg));
+				}
+			}
+			.perspective(1000);
+			.transform-style(preserve-3d);
+		}
+		
+		/* flip speed goes here */
+		.flipper {
+			.transition(0.6s);
+			.transform-style(preserve-3d);
+			position: relative;
+		}
+		
+		/* hide back of pane during swap */
+		.flip-frontside, .flip-backside {
+			.backface-visibility(hidden);
+			.transition(0.6s);
+			.transform-style(preserve-3d);
+			top: 0;
+			left: 0;
+			position: absolute;
+		}
+		
+		/*  UPDATED! front pane, placed above back */
+		.flip-frontside {
+			z-index: 2;
+			.transform(rotateY(0deg));
+		}
+		
+		/* back, initially hidden pane */
+		.flip-backside {
+			.transform(rotateY(-180deg));
+		}
 	}
 }
