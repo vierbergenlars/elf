@@ -53,7 +53,8 @@ article .anchor-position-fixer {
  * SECTION: Header
  */
 header {
-	padding-top: @navbar-height;
+	padding-top: (@navbar-height+40px);
+	padding-top: 50vh;
 	background: url("../img/atrium.jpg") center;
 	.background-size(cover);
 	.border-box;
@@ -62,6 +63,12 @@ header {
 	margin: 0;
 }
 
+.header-logo {
+	background-image: url("../img/elf-header.png");
+	width: @header-logo-width;
+	height: @header-logo-height;
+	margin: (-@header-logo-height/2) auto 0;
+}
 
 /**
  * SECTION: Programma
