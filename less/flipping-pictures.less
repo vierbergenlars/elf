@@ -4,8 +4,15 @@
 @import "prefixer";
 @import "variables";
 
-@media(min-width: @screen-sm-min) {
-	/* Activate flipper only on things larger than phones */
+
+
+/* NOT((min-width: @screen-xs-min) and (max-width: @screen-xs-max))
+ * NOT(min-width: @screen-xs-min), NOT(max-width: @screen-xs-max)
+ * (max-width: @screen-xs-min), (min-width: @screen-xs-max)
+ * (max-width: @screen-xxs-max), (min-width: @screen-sm-min)
+ */
+@media (min-width: @screen-sm-min), (max-width: @screen-xxs-max) {
+
 	.flip-container {
 		&:hover, &.hover {
 			/* entire container, keeps perspective */
