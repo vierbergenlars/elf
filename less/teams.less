@@ -55,6 +55,19 @@
 			border-right-width: 0;
 		}
 	}
+	
+	@media print {
+		.flip-backside {
+			border: 2px solid black;
+			border-top-width: 0;
+			margin: @team-pic-margin/2;
+		}
+		.flip-frontside {
+			border: 2px solid black;
+			border-bottom-width: 0;
+			margin: @team-pic-margin/2;
+		}
+	}
 	.flip-container {
 		/* We cannot just use margin: @team-pic-margin/2 here!
 		 * The bootstrap grid system uses negative horizontal margins on .row to remove 
