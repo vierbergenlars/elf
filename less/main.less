@@ -20,7 +20,7 @@ article .container {
 	margin-top: -@sawed-image-height;
 }
 
-article {
+article, footer {
 	&:before {
 		position: relative;
 		display: block;
@@ -102,4 +102,19 @@ header {
 		background: url("../img/album-paper-saw-12x4-top.png");	
 	}
 	background: url("../img/album-paper.png"); 
+}
+
+#sec-act {
+	&:before {
+		background: url("../img/plain-paper-saw-12x4-top.png");
+	}
+	background: url("../img/plain-paper.png");
+}
+
+footer {
+	&:before {
+		background: url("../img/black-saw-12x4-top.png");
+	}
+	background: black;
+	color: @gray-light;
 }
