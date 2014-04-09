@@ -53,21 +53,26 @@ article .anchor-position-fixer {
  * SECTION: Header
  */
 header {
-	padding-top: (@navbar-height+40px);
-	padding-top: 50vh;
 	background: url("../img/atrium.jpg") center;
 	.background-size(cover);
-	.border-box;
-	min-height: 100%;
-	overflow: hidden;
+	height: 100%;
 	margin: 0;
+	padding-top: @navbar-height;
+}
+
+header table {
+	// Please don't kill me now
+	height: 100%;
+	margin: 0 auto;
+	max-width: 100%;
+	td {
+		vertical-align: middle;
+	}
 }
 
 .header-logo {
-	background-image: url("../img/elf-header.png");
-	width: @header-logo-width;
-	height: @header-logo-height;
-	margin: (-@header-logo-height/2) auto 0;
+	max-width: 100%;
+	margin: 0 auto;
 }
 
 /**
