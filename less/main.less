@@ -43,9 +43,11 @@ article h2 {
 
 article h2 a {
 	/* Hide linkified titles */
-	text-decoration: none;
-	cursor: default;
-	color: inherit;
+	&:hover, & {
+		text-decoration: none;
+		cursor: default;
+		color: inherit;
+	}
 }
 
 article .anchor-position-fixer {
