@@ -41,7 +41,11 @@ $('#map-canvas').parent().sticky({
 			});
 	
 	function select_activity($activity) {
-		$activity.siblings().each(function() {deselect_activity($(this)); });
+		deselect_other_activities($activity);
+		select_activity_no_deselect($activity);
+	}
+	
+	function select_activity_no_deselect($activity) {
 		$activity.addClass('activity-selected');
 		var locationParts = $activity.data('location').split(',');
 		var position = new google.maps.LatLng(locationParts[0], locationParts[1]);
@@ -49,25 +53,42 @@ $('#map-canvas').parent().sticky({
 		event_map.panTo(position);
 	}
 	
+	function deselect_other_activities($activity) {
+		$activity.siblings('.activity-selected').each(function() {deselect_activity($(this)); });
+	}
+	
 	function deselect_activity($activity) {
 		$activity.removeClass('activity-selected');
 		$activity.data('g-marker').setAnimation(null);
 	}
-	
-	var markers = [];
+			
+	var markers = {};
 	
 	$('.activity-list [data-location]').each(function() {
 		var $this = $(this);
-		var locationParts = $this.data('location').split(',');
-		var position = new google.maps.LatLng(locationParts[0], locationParts[1]);
-		var marker = new google.maps.Marker({
-			position: position,
-			title: $this.find('h3').text(),
-			map: event_map,
-		});
-		markers.push(marker);
+		var location = $this.data('location');
+		var marker;
+		if(!markers[location]) {
+			var locationParts = location.split(',');
+			var position = new google.maps.LatLng(locationParts[0], locationParts[1]);
+			marker = new google.maps.Marker({
+				position: position,
+				title: $this.find('h3').text(),
+				map: event_map,
+			});
+			markers[location] = marker;
+			google.maps.event.addListener(marker, 'click', function() {
+				deselect_other_activities($this);
+			});
+		} else {
+			marker = markers[location];
+			marker.setTitle(marker.getTitle()+' & '+$this.find('h3').text());
+		}
 		google.maps.event.addListener(marker, 'click', function() {
-			select_activity($this);
+			select_activity_no_deselect($this);
+			if(!$.scrollTo.window().queue().length) {
+				$.scrollTo($this, 800, { offset: -55 });
+			}
 		});
 		$this.data('g-marker', marker);
 	});
@@ -76,8 +97,10 @@ $('#map-canvas').parent().sticky({
 		var $this = $(this);
 		if($this.hasClass('activity-selected')) {
 			deselect_activity($this);
+			deselect_other_activities($this);
 		} else {
 			select_activity($this);
+			$.scrollTo($('#map-canvas'), 800, { offset: -55 });
 		}
 	});
 })();
@@ -85,21 +108,18 @@ $('#map-canvas').parent().sticky({
 /**
  * Mark past & current events
  */
-(function() {
-	$('.vevent').each(function() {
-		var $this = $(this);
-		var startDate = new Date($this.find('.dtstart').attr('datetime'));
-		var endDate = new Date($this.find('.dtend').attr('datetime'));
-		var now = new Date();
-		
-		console.log($this, endDate, startDate, now);
-		console.log(endDate > now, startDate < now);
-		
-		// startDate < now < endDate
-		if(startDate < now && now < endDate) {
-			$this.addClass('activity-now');
-		} else if(now > endDate) {
-			$this.addClass('activity-passed');
-		}
-	});
-})();
+$('.vevent').each(function() {
+	var $this = $(this);
+	var startDate = new Date($this.find('.dtstart').attr('datetime'));
+	var endDate = new Date($this.find('.dtend').attr('datetime'));
+	var now = new Date();
+	
+	console.log($this.children('.summary').text(), startDate, endDate, now);
+			
+	// startDate < now < endDate
+	if(startDate < now && now < endDate) {
+		$this.addClass('activity-now');
+	} else if(now > endDate) {
+		$this.addClass('activity-passed');
+	}
+});
