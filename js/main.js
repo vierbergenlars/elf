@@ -20,6 +20,15 @@ $('.flip-container').on('touchstart click', function() {
 });
 
 /**
+ * Make the map canvas stick to the left side of the screen in the activities section
+ */
+$('#map-canvas').parent().sticky({
+	top: 55,
+	boundary: $('#map-canvas').parents('.row').first(),
+});
+
+
+/**
  * Show activities on google maps on click
  */
 (function() {
