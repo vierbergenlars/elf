@@ -104,37 +104,93 @@ EOL
 
 <p>System.exit(0); // Lars</p>
 EOL
-			),
-			'br'=> array(
-					'title'=>'BR',
-					'names'=>'Laurens &amp; Bart',
-					'text'=><<<EOL
+				),
+				'br'=> array(
+						'title'=>'BR',
+						'names'=>'Laurens &amp; Bart',
+						'text'=><<<EOL
 <p>ABC. Always Be Closing.</p>
 <p>Dat waren de tips die Alec Baldwin&#39;s karakter meegaf aan zijn verkopers toen ze niet wisten wat ze moesten doen. En dus ook dat is wat wij gaan doen! Always be closing the best deals for you! Als echte Wolfs of Wall Street gaan wij op zoek naar partners die ons (en dus ook jullie) helpen om kick-ass feestjes te bouwen, onze T-magazine te drukken en onze bicky&#39;s te verdelen onder de hongerigen  onder jullie!</p>
 <p>Maar het is niet alleen voor de feesters en eters onder jullie dat wij partners zoeken. Ben je op zoek naar een job? Een stage lijkt jou wel iets cool? Via workshops en lezingen brengen wij je in contact met de beste bedrijven uit de ingenieurssector!</p>
 <p>Vragen? Aarzel zeker niet om ons een vraagje te stellen!</p>
 EOL
-			)
+				)
 		),
 		'prog'=>array(
 				'America national sport is called baseballs. It very similar
-						to our sport, shurik, where we take dogs, shoot them in a field,
-						and then have a party.',
+				to our sport, shurik, where we take dogs, shoot them in a field,
+				and then have a party.',
 				'Kazakhstan is the greatest country in the world. All other
-						countries are run by little girls. Kazakhstan is number one
-						exporter of potassium. Other Central Asian countries have inferior
-						potassium. Kazakhstan is the greatest country in the world. All
-						other countries is the home of the gays.',
+				countries are run by little girls. Kazakhstan is number one
+				exporter of potassium. Other Central Asian countries have inferior
+				potassium. Kazakhstan is the greatest country in the world. All
+				other countries is the home of the gays.',
 				'Uhm, at the start, she was a cook good, her vazh&iuml;n work
-						well, and she strong on plow. But after three years, when she was
-						15, then she become weak. Her voice become a deep. "Borat, Borat!"
-						She a receive hair on her chest and her vazh&iuml;n hang like sleeve of
-						wizard.',
+				well, and she strong on plow. But after three years, when she was
+				15, then she become weak. Her voice become a deep. "Borat, Borat!"
+				She a receive hair on her chest and her vazh&iuml;n hang like sleeve of
+				wizard.',
 				'This CJ was like no Kazakh woman I have ever seen. She had
-						golden hairs, teeth as white as pearls, and the asshole of a
-						seven-year-old. For the first time in my lifes, I was in love.'
+				golden hairs, teeth as white as pearls, and the asshole of a
+				seven-year-old. For the first time in my lifes, I was in love.'
 		),
 		'act'=> array(
+				array(
+					'title'=>'Azamat',
+					'location'=>'50.874799,4.708097',
+					'start'=>new DateTime('2014-04-01T08:30'),
+					'end'=>new DateTime('2014-04-01T12:00'),
+					'desc'=>'I had no car, no money, and no Azamat. The only thing
+								keeping me going was my dream of one day holding Pamela in my
+								arms and then making romantic explosion on her stomach.'
+				),
+				array(
+						'title'=>'Greatest country',
+						'location'=>'50.8783735,4.707421',
+						'start'=>new DateTime('2014-04-09T20:00'),
+						'end'=>new DateTime('2014-04-10T05:00'),
+						'desc'=>'Kazakhstan is the greatest country in the world. All other
+								countries are run by little girls. Kazakhstan is number one
+								exporter of potassium. Other Central Asian countries have
+								inferior potassium. Kazakhstan is the greatest country in the
+								world. All other countries is the home of the gays.'
+				),
+				array(
+						'title'=>'Korki',
+						'location'=>'50.8784772,4.7115124',
+						'start'=>new DateTime('2014-04-14T10:00'),
+						'end'=>new DateTime('2014-04-14T15:00'),
+						'desc'=>'I, uh, like a very much Korki Buchek. You know Korki
+								Buchek? Bing-bang-bing-bang-bing-dl-dl-ding-ding *click* *click*
+								*click-click* bing-bang-bing-bang-bing-dl-dl-ding-ding *click*
+								*click*'
+				),
+				array(
+						'title'=>'Woman',
+						'location'=>'50.8738797,4.7098243',
+						'start'=>new DateTime('2014-04-14T12:00'),
+						'end'=>new DateTime('2014-04-14T18:00'),
+						'desc'=>'In Kazakhstan, it is illegal for more than five woman to
+								be in the same place except for in brothel or in grave. In US
+								and A, many womens meet in a groups called feminists.'
+				),
+				array(
+						'title'=>'Always party',
+						'location'=>'50.8738797,4.7098243',
+						'start'=>new DateTime('2014-04-10T20:06'),
+						'end'=>new DateTime('2014-10-10T05:00'),
+						'desc'=>'Party, always! I like.'
+				),
 
+
+		),
+		'weekday' => array(
+				'Ma',
+				'Di',
+				'Wo',
+				'Do',
+				'Vr',
+				'Za',
+				'Zo'
 		)
 );

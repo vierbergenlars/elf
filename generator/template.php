@@ -124,57 +124,16 @@
 			<div class="row">
 				<div class="col-sm-6">
 					<div class="row activity-list">
-						<div class="col-xs-12 vevent" data-location="50.874799,4.708097">
-							<h3 class="summary">Azamat</h3>
-							<p>
-								<time class="dtstart" datetime="2014-04-01T08:30+02:00">Di 1/4 @ 8:30</time> - <time class="dtend" datetime="2014-04-01T12:00+02:00">12:00</time>
-							</p>
-							<p class="description">I had no car, no money, and no Azamat. The only thing
-								keeping me going was my dream of one day holding Pamela in my
-								arms and then making romantic explosion on her stomach.</p>
-
-						</div>
-						<div class="col-xs-12 vevent" data-location="50.8783735,4.707421">
-							<h3 class="summary">Greatest country</h3>
-							<p>
-								<time class="dtstart" datetime="2014-04-09T20:00+02:00">Wo 9/4 @ 20:00</time> - <time class="dtend" datetime="2014-04-10T05:00+02:00">Do 10/4 @ 05:00</time>
-							</p>
-
-							<p class="description">Kazakhstan is the greatest country in the world. All other
-								countries are run by little girls. Kazakhstan is number one
-								exporter of potassium. Other Central Asian countries have
-								inferior potassium. Kazakhstan is the greatest country in the
-								world. All other countries is the home of the gays.</p>
-						</div>
-						<div class="col-xs-12 vevent" data-location="50.8784772,4.7115124">
-							<h3 class="summary">Korki</h3>
-							<p>
-								<time class="dtstart" datetime="2014-04-14T10:00+02:00">Ma 14/4 @ 10:00</time> - <time class="dtend" datetime="2014-04-14T15:00+02:00">15:00</time>
-							</p>
-							<p class="description">I, uh, like a very much Korki Buchek. You know Korki
-								Buchek? Bing-bang-bing-bang-bing-dl-dl-ding-ding *click* *click*
-								*click-click* bing-bang-bing-bang-bing-dl-dl-ding-ding *click*
-								*click*</p>
-						</div>
-						<div class="col-xs-12 vevent" data-location="50.8738797,4.7098243">
-							<h3 class="summary">Woman</h3>
-							<p>
-								<time class="dtstart" datetime="2014-04-14T12:00+02:00">Ma 14/4 @ 14:00</time> - <time class="dtend" datetime="2014-04-14T18:00+02:00">18:00</time>
-							</p>
-							<p class="description">In Kazakhstan, it is illegal for more than five woman to
-								be in the same place except for in brothel or in grave. In US
-								and A, many womens meet in a groups called feminists.</p>
-						</div>
-						<div class="col-xs-12 vevent" data-location="50.8738797,4.7098243">
-							<h3 class="summary">Always party</h3>
-							<p>
-								<time class="dtstart" datetime="2014-04-10T20:06+02:00">Now</time> - <time class="dtend" datetime="2020-01-01T00:00+02:00">2020</time>
-							</p>
-							<p class="description">
-								Party, always.
-								I like!
-							</p>
-						</div>
+						<?php foreach($data['act'] as $act) { ?>
+							<div class="col-xs-12 vevent" data-location="<?=$act['location']?>">
+								<h3 class="summary"><?=$act['title']?></h3>
+								<p>
+								<?php list($start_fmt, $end_fmt) = format_activity_date($act, $data) ?>
+									<time class="dtstart" datetime="<?=$act['start']->format('Y-m-d\TH:i')?>+02:00"><?=$start_fmt?></time> - <time class="dtend" datetime="<?=$act['end']->format('Y-m-d\TH:i')?>+02:00"><?=$end_fmt?></time>
+								</p>
+								<p class="description"><?=$act['desc']?></p>
+							</div>
+						<?php } ?>
 					</div>
 				</div>
 				<div class="col-sm-6">
