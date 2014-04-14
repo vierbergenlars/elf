@@ -36,9 +36,9 @@
 			</div>
 			<div class="collapse navbar-collapse" id="main-navigation">
 				<ul class="nav navbar-nav">
-					<li><a href="#team">Team</a></li>
-					<li><a href="#prog">Programma</a></li>
-					<li><a href="#act">Activiteiten</a></li>
+					<li><a href="#team"><?=$data['title']['team']?></a></li>
+					<li><a href="#prog"><?=$data['title']['prog']?></a></li>
+					<li><a href="#act"><?=$data['title']['act']?></a></li>
 				</ul>
 			</div>
 		</div>
@@ -58,7 +58,7 @@
 			<div class="row">
 				<div class="col-xs-12">
 					<h2>
-						<a href="#team"> Team</a>
+						<a href="#team"><?=$data['title']['team']?></a>
 					</h2>
 				</div>
 			</div>
@@ -88,7 +88,7 @@
 			<div class="row">
 				<div class="col-xs-12">
 					<h2>
-						<a href="#prog">Programma</a>
+						<a href="#prog"><?=$data['title']['prog']?></a>
 					</h2>
 				</div>
 			</div>
@@ -117,7 +117,7 @@
 			<div class="row">
 				<div class="col-xs-12">
 					<h2>
-						<a href="#act">Activiteiten</a>
+						<a href="#act"><?=$data['title']['act']?></a>
 					</h2>
 				</div>
 			</div>

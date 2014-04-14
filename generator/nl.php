@@ -192,5 +192,10 @@ EOL
 				'Vr',
 				'Za',
 				'Zo'
+		),
+		'title'=> array(
+				'team'=>'Team',
+				'prog'=>'Programma',
+				'act'=>'Activiteiten',
 		)
 );
