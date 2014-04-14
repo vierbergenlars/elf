@@ -27,6 +27,7 @@
 <meta property="twitter:site" content="<?=$data['meta']['twitter_account']?>">
 
 <link rel="stylesheet" href="css/main.css">
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 <!-- <link rel="stylesheet/less" href="less/main.less">
 <script src="js/vendor/less-1.7.0.min.js"></script> -->
 
@@ -161,7 +162,11 @@
 	<footer>
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-12">Footer</div>
+				<div class="col-xs-6">&copy; 2014 ELF!</div>
+				<div class="col-xs-6">
+					<p><a href="https://twitter.com/<?=$data['meta']['twitter_account']?>"><i class="fa fa-twitter"></i> @<?=$data['meta']['twitter_account']?></a></p>
+					<p><a href="https://facebook.com/<?=$data['meta']['fb_account']?>"><i class="fa fa-facebook"></i> /<?=$data['meta']['fb_account']?></a></p>
+				</div>
 			</div>
 		</div>
 	</footer>
