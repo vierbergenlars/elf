@@ -15,7 +15,7 @@
 <!-- Facebook graph metadata -->
 <meta property="og:title" content="ELF!">
 <meta property="og:type" content="website">
-<meta property="og:image" content="img/elf-bk.png">
+<meta property="og:image" content="<?=$data['meta']['root_url']?>img/elf-bk.png">
 <meta property="og:description" content="<?=$data['meta']['description']?>">
 <meta proptery="fb:admins" content="<?=$data['meta']['fb_admins']?>">
 
@@ -23,7 +23,7 @@
 <meta property="twitter:card" content="summary">
 <meta property="twitter:title" content="ELF!">
 <meta property="twitter:description" content="<?=$data['meta']['description']?>">
-<meta property="twitter:image" content="img/elf-bk.png">
+<meta property="twitter:image" content="<?=$data['meta']['root_url']?>img/elf-bk.png">
 <meta property="twitter:site" content="<?=$data['meta']['twitter_account']?>">
 
 <link rel="stylesheet" href="css/main.css">
