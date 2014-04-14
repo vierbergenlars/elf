@@ -9,9 +9,22 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <title>ELF! ~ Working our magic</title>
-<meta name="description" content="">
+<meta name="description" content="<?=$data['meta']['description']?>">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 <link rel="profile" href="http://microformats.org/profile/hcalendar">
+<!-- Facebook graph metadata -->
+<meta property="og:title" content="ELF!">
+<meta property="og:type" content="website">
+<meta property="og:image" content="img/elf-bk.png">
+<meta property="og:description" content="<?=$data['meta']['description']?>">
+<meta proptery="fb:admins" content="<?=$data['meta']['fb_admins']?>">
+
+<!-- Twitter cards metadata -->
+<meta property="twitter:card" content="summary">
+<meta property="twitter:title" content="ELF!">
+<meta property="twitter:description" content="<?=$data['meta']['description']?>">
+<meta property="twitter:image" content="img/elf-bk.png">
+<meta property="twitter:site" content="<?=$data['meta']['twitter_account']?>">
 
 <link rel="stylesheet" href="css/main.css">
 <!-- <link rel="stylesheet/less" href="less/main.less">

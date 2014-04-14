@@ -1,5 +1,6 @@
 <?php
 
+$defaults = include __DIR__.'/defaults.php';
 $languages = array('index'=>include __DIR__.'/nl.php', 'en'=>include __DIR__.'/en.php');
 
 function translate_activity_dow(DateTime $start, $data) {
@@ -27,6 +28,7 @@ function load_template($data) {
 }
 
 foreach($languages as $lang=>$data) {
+	$data = array_merge_recursive($defaults, $data);
 	$compiled = load_template($data);
 	file_put_contents(__DIR__.'/../'.$lang.'.html', $compiled);
 }
