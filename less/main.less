@@ -130,8 +130,31 @@ header table {
 }
 
 /**
- * Footer
+ * SECTION: Games
  */
+ 
+#sec-game {
+	&:before {
+		background: url("../img/black-saw-12x4-top.png");
+	}
+
+	background: black;
+	iframe {
+		width: 100%;
+		border: 0;
+	}
+
+	iframe , & {
+		height: 1076px;
+	}
+
+	@media screen and (max-width: 537px) {
+		iframe , & {
+			height: 763px;
+		}
+	}
+}
+
 footer {
 	&:before {
 		background: url("../img/black-saw-12x4-top.png");

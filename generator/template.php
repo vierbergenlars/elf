@@ -95,6 +95,11 @@
 			</div>
 		</div>
 	</article>
+	<article id="sec-game">
+		<div class="anchor-position-fixer" id="game"></div>
+		<iframe src="2048/index.html" allowtransparency="true"></iframe>
+
+	</article>
 
 	<article id="sec-prog">
 		<div class="anchor-position-fixer" id="prog"></div>

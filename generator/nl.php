@@ -195,6 +195,7 @@ EOL
 		),
 		'title'=> array(
 				'team'=>'Team',
+				'game'=>'2048',
 				'prog'=>'Programma',
 				'act'=>'Doelstellingen',
 		),
