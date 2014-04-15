@@ -150,13 +150,13 @@ EOL
 				),
 		),
 		'weekday' => array(
+				'Zo',
 				'Ma',
 				'Di',
 				'Wo',
 				'Do',
 				'Vr',
-				'Za',
-				'Zo'
+				'Za'
 		),
 		'title'=> array(
 				'team'=>'Team',
