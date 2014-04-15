@@ -196,8 +196,8 @@ EOL
 		'title'=> array(
 				'team'=>'Team',
 				'game'=>'2048',
-				'prog'=>'Programma',
-				'act'=>'Doelstellingen',
+				'prog'=>'Doelstellingen',
+				'act'=>'Activiteiten',
 		),
 		'meta' => array(
 				'description'=>'Wij zijn ELF!, d&eacute; opkomende ploeg voor het Industria praesidium \'14 - \'15',
