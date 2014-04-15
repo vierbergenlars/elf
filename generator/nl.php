@@ -110,29 +110,64 @@ EOL
 						'names'=>'Laurens &amp; Bart',
 						'text'=><<<EOL
 <p>ABC. Always Be Closing.</p>
-<p>Dat waren de tips die Alec Baldwin&#39;s karakter meegaf aan zijn verkopers toen ze niet wisten wat ze moesten doen. En dus ook dat is wat wij gaan doen! Always be closing the best deals for you! Als echte Wolfs of Wall Street gaan wij op zoek naar partners die ons (en dus ook jullie) helpen om kick-ass feestjes te bouwen, onze T-magazine te drukken en onze bicky&#39;s te verdelen onder de hongerigen  onder jullie!</p>
+<p>Dat waren de tips die Alec Baldwin&rsquo;s karakter meegaf aan zijn verkopers toen ze niet wisten wat ze moesten doen. En dus ook dat is wat wij gaan doen! Always be closing the best deals for you! Als echte Wolfs of Wall Street gaan wij op zoek naar partners die ons (en dus ook jullie) helpen om kick-ass feestjes te bouwen, onze T-magazine te drukken en onze bicky&#39;s te verdelen onder de hongerigen  onder jullie!</p>
 <p>Maar het is niet alleen voor de feesters en eters onder jullie dat wij partners zoeken. Ben je op zoek naar een job? Een stage lijkt jou wel iets cool? Via workshops en lezingen brengen wij je in contact met de beste bedrijven uit de ingenieurssector!</p>
 <p>Vragen? Aarzel zeker niet om ons een vraagje te stellen!</p>
 EOL
 				)
 		),
 		'prog'=>array(
-				'America national sport is called baseballs. It very similar
-				to our sport, shurik, where we take dogs, shoot them in a field,
-				and then have a party.',
-				'Kazakhstan is the greatest country in the world. All other
-				countries are run by little girls. Kazakhstan is number one
-				exporter of potassium. Other Central Asian countries have inferior
-				potassium. Kazakhstan is the greatest country in the world. All
-				other countries is the home of the gays.',
-				'Uhm, at the start, she was a cook good, her vazh&iuml;n work
-				well, and she strong on plow. But after three years, when she was
-				15, then she become weak. Her voice become a deep. "Borat, Borat!"
-				She a receive hair on her chest and her vazh&iuml;n hang like sleeve of
-				wizard.',
-				'This CJ was like no Kazakh woman I have ever seen. She had
-				golden hairs, teeth as white as pearls, and the asshole of a
-				seven-year-old. For the first time in my lifes, I was in love.'
+				array(
+						'title'=>'Geen blauwtje lopen',
+						'text'=><<<EOL
+<p>We zijn al KU Leuven geworden. Maar dat was nog maar het topje van de ijsberg.</p>
+<p>Organisatorisch en financieel is het veel moeilijker geworden om activiteiten op Groep T of ergens anders te laten doorgaan. Het is belangrijk dat Industria, samen met Groep T en de Studentenraad, volgend academiejaar zich inzet om het jaar vlot te laten verlopen.</p>
+<p>Hoe? Door een goede communicatie met Groep T en SR kan al veel hinder voorkomen worden.</p>
+<p>Ook in de LOKO AV moeten we ons mannetje blijven staan en ijveren voor onze rechten.</p>
+EOL
+				),
+				array(
+						'title'=>'Kursusdienst',
+						'text'=> <<<EOL
+<p>We zijn in Leuven nog steeds om te studeren. De kursusdienst blijft in dat opzicht nog steeds de belangrijkste functie voor de student om hem/haar zo te kunnen voorzien in de juiste boeken op het juiste tijdstip.</p>
+<p>Wij willen volgend jaar er voor zorgen dat jullie geen enkele les moeten missen zonder het juiste boek.</p>
+EOL
+				),
+				array(
+						'title'=>'Leden',
+						'text'=><<<EOL
+<p>Je kan het draaien en keren hoe je het wilt, Industria is er nog steeds voor JULLIE! Wij willen volgend
+jaar er weer voor zorgen dat jullie kunnen genieten van ontspannende, sportieve of culturele
+activiteiten. Wij zetten ons ieder jaar in om een groep van 2000 studenten te kunnen voorzien in leuke
+activiteiten.</p>
+<p>Weet je toch nog leuke alternatieven? Heb je idee&euml;n waar iedereen z&rsquo;n mond van open
+valt? Voel je gerust vrij om eens te passeren in ons lokaal of een mailtje te sturen via de site.</p>
+<p>Omgekeerd kan dit natuurlijk ook! Heb jij zin om bij de beste 24-urenloopstandjesbouwers van
+Leuven en omstreken eens een handje uit de mouwen te steken? Geen probleem! Wil jij eens
+meehelpen aan het uitwerken van een leuke activiteit? Geen probleem! Het kan en mag allemaal!</p>
+<p>Wij willen jullie dus volgend jaar betrekken in de werking en op basis van jullie mening de
+toekomstige activiteiten van Industria inplannen.</p>
+EOL
+				),
+				array(
+						'title'=>'Bedrijvenrelaties',
+						'text'=><<<EOL
+<p>In deze financieel onzekere tijden is het belangrijk dat er genoeg hulpmiddelen komen voor de
+studentenvereniging om de werking te kunnen ondersteunen zodat we jullie nog steeds alles aan
+studentikoze prijzen kunnen aanbieden. Maar ook zeker jullie een eerste contactpunt geven met
+bedrijven. Workshops aanbieden voor de studenten of lezingen in verband met het bedrijfsleven het
+zijn maar twee voorbeelden van acties die BR voor jullie kan ondernemen.</p>
+EOL
+				),
+				array(
+						'title'=>'Toekomst',
+						'text'=><<<EOL
+<p>Wat staat er in de toekomst Industria allemaal te wachten? Wat met onze fakbar D&eacute;lib&eacute;r&eacute;? Wat met
+de relatie Industria-Studentenraad? Hoe zou de werking op Groep T er binnen 10 jaar uitzien? Het
+wordt volgend jaar heel belangrijk dat wij als studentenvereniging een heel mooie basis leggen voor
+onze opvolgers zodat zij ook binnen 10 jaar nog activiteiten kunnen organiseren als Industria!</p>
+EOL
+				),
 		),
 		'act'=> array(
 				array(
@@ -161,7 +196,7 @@ EOL
 		'title'=> array(
 				'team'=>'Team',
 				'prog'=>'Programma',
-				'act'=>'Activiteiten',
+				'act'=>'Doelstellingen',
 		),
 		'meta' => array(
 				'description'=>'Wij zijn ELF!, d&eacute; opkomende ploeg voor het Industria praesidium \'14 - \'15',

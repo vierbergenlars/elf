@@ -50,9 +50,9 @@
 			</div>
 			<div class="collapse navbar-collapse" id="main-navigation">
 				<ul class="nav navbar-nav">
-					<li><a href="#team"><?=$data['title']['team']?></a></li>
-					<li><a href="#prog"><?=$data['title']['prog']?></a></li>
-					<li><a href="#act"><?=$data['title']['act']?></a></li>
+					<?php foreach($data['title'] as $anchor=>$title) { ?>
+						<li><a href="#<?=$anchor?>"><?=$title?></a></li>
+					<?php } ?>
 				</ul>
 			</div>
 		</div>
@@ -108,17 +108,15 @@
 			</div>
 			<div class="row">
 				<?php foreach($data['prog'] as $num=>$p) { $num++;?>
-					<div class="col-xxs-12 col-xs-6 col-sm-4 col-md-3">
-						<p><?=$p;?></p>
+					<div class="col-xxs-12 col-xs-6 col-sm-4">
+						<h3><?=$p['title']?></h3>
+						<?=$p['text'];?>
 					</div>
 					<?php if($num%2 == 0) { ?>
 						<div class="clearfix visible-xs"></div>
 					<?php } ?>
 					<?php if($num%3 == 0) { ?>
-						<div class="clearfix visible-sm"></div>
-					<?php } ?>
-					<?php if($num%4 == 0) { ?>
-						<div class="clearfix visible-md"></div>
+						<div class="clearfix hidden-xs"></div>
 					<?php } ?>
 				<?php } ?>
 			</div>
