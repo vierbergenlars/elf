@@ -5,30 +5,86 @@
 <title>Insert title here</title>
 <style type="text/css">
 .picture-container {
-	background: gray;
-	background: url('pic.jpg');
-	background-size: cover;
+	background-color: #00FF00;
+	background-image: url('pic.jpg');
 	background-position: center center;
-	width: 420px;
+	background-repeat: no-repeat;
 	height: 250px;
+	float: left;
 	border: 2px solid black;
 }
-
 .center-frame {
 	border: 10px solid white;
-	border-left-width: 120px;
-	border-right-width: 120px;
-	width: 180px;
 	height: 230px;
-	opacity: 0.6;
+	opacity: 0.5;
 }
+.frame-md .picture-container {
+	width: 282px;
+}
+
+.frame-sm .picture-container {
+	width: 367px;
+}
+
+.frame-xs .picture-container {
+	width: 401px;
+}
+
+.frame-xs .center-frame {
+	width: 238px;
+	border-left-width: 81.5px;
+	border-right-width: 81.5px;
+}
+
+.frame-xxs .picture-container {
+	width: 454px;
+}
+
+.frame-xxs .center-frame {
+	width: 322px;
+	border-left-width: 66px;
+	border-right-width: 66px;
+}
+.clearfix {
+	clear: both;
+}
+
 </style>
 </head>
 <body>
-	<div class="picture-container">
-		<div class="center-frame"></div>
+	<div class="frame-md">
+		<div class="picture-container">
+			<div class="center-frame"></div>
+		</div>
 	</div>
-<script>
-</script>
+	<div class="frame-sm">
+		<div class="picture-container">
+			<div class="center-frame"></div>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+	<div class="frame-xs">
+		<div class="picture-container">
+			<div class="center-frame"></div>
+		</div>
+	</div>
+	<div class="frame-xxs">
+		<div class="picture-container">
+			<div class="center-frame"></div>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+	<div style="float: left; width: 50%">
+	<h2>Gebruik</h2>
+	<p>Download dit bestand <em>File &gt; Save as...</em></p>
+	<p>Sla afbeelding op in dezelfde map als <i>pic.jpg</i></p>
+	<p>Open dit bestand met <em>Google Chrome</em> of <em>Firefox</em></p>
+	</div>
+	<div style="float: left; width: 50%">
+	<h2>Afbeelding uitproberen</h2>
+	<p>Personen moeten volledig in de kader passen</p>
+	<p>Achtergrond moet de volledige zwarte kader bedekken. Er mogen geen randen zijn.</p>
+	<p>De afbeelding mag liefst nog groter zijn als de kader alleen, dan is er wat speling</p>
+	</div>	
 </body>
 </html>
