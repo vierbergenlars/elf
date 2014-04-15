@@ -27,7 +27,7 @@
 <meta property="twitter:site" content="<?=$data['meta']['twitter_account']?>">
 
 <link rel="stylesheet" href="css/main.css">
-<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 <!-- <link rel="stylesheet/less" href="less/main.less">
 <script src="js/vendor/less-1.7.0.min.js"></script> -->
 
@@ -140,12 +140,13 @@
 					<div class="row activity-list">
 						<?php foreach($data['act'] as $act) { ?>
 							<div class="col-xs-12 vevent" data-location="<?=$act['location']?>">
-								<h3 class="summary"><?=$act['title']?></h3>
-								<p>
+								<h3 class="summary"><?=$act['title']?>&emsp;<a href="https://facebook.com/events/<?=$act['fb_id']?>/" title="To facebook event" target="_blank"><i class="fa fa-facebook-square"></i></a></h3>
+								<p class="time">
 								<?php list($start_fmt, $end_fmt) = format_activity_date($act, $data) ?>
-									<time class="dtstart" datetime="<?=$act['start']->format('Y-m-d\TH:i')?>+02:00"><?=$start_fmt?></time> - <time class="dtend" datetime="<?=$act['end']->format('Y-m-d\TH:i')?>+02:00"><?=$end_fmt?></time>
+									<i class="fa fa-clock-o fa-fw"></i> <time class="dtstart" datetime="<?=$act['start']->format('Y-m-d\TH:i')?>+02:00"><?=$start_fmt?></time> - <time class="dtend" datetime="<?=$act['end']->format('Y-m-d\TH:i')?>+02:00"><?=$end_fmt?></time>
 								</p>
-								<p class="description"><?=$act['desc']?></p>
+								<p class="location"><i class="fa fa-map-marker fa-fw"></i> <?=$act['location_text']?></p>
+								<div class="description"><?=$act['desc']?></div>
 							</div>
 						<?php } ?>
 					</div>
@@ -169,13 +170,13 @@
 				<div class="col-xs-6">
 					<p>
 						<a
-							href="https://twitter.com/<?=$data['meta']['twitter_account']?>"><i
-							class="fa fa-twitter"></i> @<?=$data['meta']['twitter_account']?>
+							href="https://twitter.com/<?=$data['meta']['twitter_account']?>" target="_blank"><i
+							class="fa fa-twitter fa-fw"></i> @<?=$data['meta']['twitter_account']?>
 						</a>
 					</p>
 					<p>
-						<a href="https://facebook.com/<?=$data['meta']['fb_account']?>"><i
-							class="fa fa-facebook"></i> /<?=$data['meta']['fb_account']?> </a>
+						<a href="https://facebook.com/<?=$data['meta']['fb_account']?>" target="_blank"><i
+							class="fa fa-facebook fa-fw"></i> /<?=$data['meta']['fb_account']?> </a>
 					</p>
 				</div>
 			</div>
@@ -206,7 +207,7 @@
 	  var js, fjs = d.getElementsByTagName(s)[0];
 	  if (d.getElementById(id)) return;
 	  js = d.createElement(s); js.id = id;
-	  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";
+	  js.src = "http://connect.facebook.net/en_GB/all.js#xfbml=1";
 	  fjs.parentNode.insertBefore(js, fjs);
 	}(document, 'script', 'facebook-jssdk'));</script>
 </body>
