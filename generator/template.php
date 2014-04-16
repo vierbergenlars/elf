@@ -95,12 +95,6 @@
 			</div>
 		</div>
 	</article>
-	<article id="sec-game">
-		<div class="anchor-position-fixer" id="game"></div>
-		<iframe src="2048/index.html" allowtransparency="true"></iframe>
-
-	</article>
-
 	<article id="sec-prog">
 		<div class="anchor-position-fixer" id="prog"></div>
 		<div class="container">
@@ -127,7 +121,12 @@
 			</div>
 		</div>
 	</article>
-
+	<article id="sec-game">
+		<div class="anchor-position-fixer" id="game"></div>
+		<div class="game-2048">
+			<iframe src="2048/index.html" class="gameframe"></iframe>
+		</div>
+	</article>
 	<article id="sec-act">
 		<div class="anchor-position-fixer" id="act"></div>
 		<div class="container">

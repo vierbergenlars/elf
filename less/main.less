@@ -93,18 +93,20 @@ header table {
 	}
 
 	background: black;
-	iframe {
+	.gameframe {
 		width: 100%;
 		border: 0;
 	}
 
-	iframe , & {
-		height: 1076px;
-	}
+	.game-2048 {
+		.gameframe {
+			height: 1076px;
+		}
 
-	@media screen and (max-width: 537px) {
-		iframe , & {
-			height: 763px;
+		@media screen and (max-width: 537px) {
+			.gameframe {
+				height: 763px;
+			}
 		}
 	}
 }

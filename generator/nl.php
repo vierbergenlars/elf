@@ -195,8 +195,8 @@ EOL
 		),
 		'title'=> array(
 				'team'=>'Team',
-				'game'=>'2048',
 				'prog'=>'Doelstellingen',
+				'game'=>'2048',
 				'act'=>'Activiteiten',
 		),
 		'meta' => array(
