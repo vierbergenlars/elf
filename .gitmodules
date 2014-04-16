@@ -3,4 +3,4 @@
 	url = git://github.com/vierbergenlars/2048.git
 [submodule "less/bootstrap"]
 	path = less/bootstrap
-	url = git://github.com/twbs/bootstrap.git
+	url = git://github.com/vierbergenlars/bootstrap.git
