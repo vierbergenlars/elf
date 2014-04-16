@@ -1,0 +1,67 @@
+@import "h5bp.less";
+@import "bootstrap.less";
+@import "variables.less";
+@import "sections.less";
+@import "prefixer.less";
+@import url("../font/stylesheet.css");
+
+.background-and-hover(@bg) {
+	background-color: @bg;
+	@border: darken(@bg, 5%);
+	border-color: @border;
+	.background-and-border-on-hover(darken(@bg, 10%), darken(@border, 12%));
+}
+
+.background-and-border-on-hover(@bg, @border: darken(@bg, 5%)) {
+	&:hover, &.activity-selected {
+		background-color: @bg;
+		border-color: @border
+	}
+}
+
+
+header {
+	background: url("../img/checkered-paper.png");
+	img {
+		margin: 30px auto;
+		margin-top: (30px - @sawed-image-height);
+		max-height: 80%;
+		max-width: 100%;
+		display: block;
+		.border-radius(50px);
+	}
+}
+
+#sec-err {
+	&:before {
+		background: url("../img/plain-paper-saw-12x4-top.png");
+	}
+	font-family: 'designer_notesbold';
+	font-size: 18px;
+	padding-bottom: 28px;
+	h2 {
+		font-size: 30px;
+		margin-bottom: 0;
+	}
+	
+	background: url("../img/plain-paper.png");
+	.go {
+		.transition(1s);
+		.border-radius(4px);
+		display: block;
+		width: 100%;
+		padding: 30px;
+		margin: 0 auto;
+		text-align: center;
+		text-decoration: none;
+		border: 1px solid;
+	}
+	.go-home {
+		.background-and-hover(@brand-primary);
+		color: white;
+	}
+	.go-play-a-game {
+		.background-and-hover(#eee);
+		color: @text-color;
+	}
+}

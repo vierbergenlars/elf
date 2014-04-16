@@ -21,14 +21,17 @@ function format_activity_date($act, $data) {
 	return array($start_fmt, $end_fmt);
 }
 
-function load_template($data) {
+function load_template($data, $tpl) {
 	ob_start();
-	include __DIR__.'/template.php';
+	include __DIR__.'/'.$tpl.'.php';
 	return ob_get_clean();
 }
 
 foreach($languages as $lang=>$data) {
 	$data = array_merge_recursive($defaults, $data);
-	$compiled = load_template($data);
+	$compiled = load_template($data, 'template');
 	file_put_contents(__DIR__.'/../'.$lang.'.html', $compiled);
 }
+
+
+file_put_contents(__DIR__.'/../404.html', load_template($defaults, '404'));

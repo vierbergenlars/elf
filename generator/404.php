@@ -36,11 +36,11 @@
 					</ul>
 				</div>
 				<div class="col-xs-12 col-sm-6">
-					<a href="http://vierbergenlars.github.io/turbo-octo-sansa/" class="go go-home"><i
+					<a href="<?=$data['meta']['root_url']?>" class="go go-home"><i
 						class="fa fa-home fa-fw"></i> Go home!</a>
 				</div>
 				<div class="col-xs-12 col-sm-6">
-					<a href="http://vierbergenlars.github.io/turbo-octo-sansa/#game"
+					<a href="<?=$data['meta']['root_url']?>#game"
 						class="go go-play-a-game"><i class="fa fa-gamepad fa-fw"></i> Go
 						play a game!</a>
 				</div>
@@ -55,7 +55,7 @@
 
 
 					<div class="fb-like" data-colorscheme="dark"
-						data-href="https://www.facebook.com/elfpraesidium"
+						data-href="https://www.facebook.com/<?=$data['meta']['fb_account']?>"
 						data-layout="standard" data-action="like" data-show-faces="true"
 						data-share="true"></div>
 					</p>
@@ -64,12 +64,14 @@
 				<div class="col-xs-6">
 					<p>
 						<a
-							href="https://twitter.com/elf_1415"
-							target="_blank"><i class="fa fa-twitter fa-fw"></i> @elf_1415						</a>
+							href="https://twitter.com/<?=$data['meta']['twitter_account']?>"
+							target="_blank"><i class="fa fa-twitter fa-fw"></i> @<?=$data['meta']['twitter_account']?>
+						</a>
 					</p>
 					<p>
-						<a href="https://facebook.com/elfpraesidium"
-							target="_blank"><i class="fa fa-facebook fa-fw"></i> /elfpraesidium						</a>
+						<a href="https://facebook.com/<?=$data['meta']['fb_account']?>"
+							target="_blank"><i class="fa fa-facebook fa-fw"></i> /<?=$data['meta']['fb_account']?>
+						</a>
 					</p>
 				</div>
 			</div>
