@@ -51,7 +51,12 @@
 			<div class="collapse navbar-collapse" id="main-navigation">
 				<ul class="nav navbar-nav">
 					<?php foreach($data['title'] as $anchor=>$title) { ?>
-						<li><a href="#<?=$anchor?>"><?=$title?></a></li>
+					<li><a href="#<?=$anchor?>"><?=$title?> </a></li>
+					<?php } ?>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<?php foreach($data['languages'] as $name=>$link) {?>
+					<li><a href="<?=$link;?>"><?=$name?> </a></li>
 					<?php } ?>
 				</ul>
 			</div>
