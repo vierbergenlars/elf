@@ -129,6 +129,7 @@ $('.vevent').each(function() {
 $('.expand-game').click(function() {
 	var $this = $(this);
 	$this.toggleClass('active');
-	$.scrollTo($this.parents('.game-container').find('.gameframe'), 800, {offset: -55});
-	
+	if($this.hasClass('active')) {
+		$.scrollTo($this, 800, {offset: -55+45});
+	}
 });
