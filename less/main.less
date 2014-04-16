@@ -1,6 +1,5 @@
 @import "h5bp.less";
 @import "bootstrap.less";
-@import url("../font/stylesheet.css");
 
 @import "variables.less";
 @import "prefixer.less";
@@ -43,20 +42,14 @@ header table {
 	&:before {
 		background: url("../img/checkered-paper-saw-12x4-top.png");
 	}
-	h2 {
-		font-family: 'designer_notesbold';
-		font-size: 30px;
-		margin-top: 18px; // Align to checkered grid
-	}
-	
-	h3 {
-		margin-top: 11px; // Align to checkered grid
-	}
-
 	background: url("../img/checkered-paper.png");
-	font-family: 'designer_notesregular';
 	
-	p {
+	h2 {
+		margin-top: 18px; // Align to checkered grid
+		margin-bottom: -5px;
+	}
+	
+	p, h3 {
 		font-size: @sawed-image-height;
 		line-height: @sawed-image-height;
 		margin: @sawed-image-height 0;
