@@ -8,53 +8,7 @@
 @import "teams.less";
 @import "grid-xxs.less";
 @import "activities.less";
-/**
- * General styles
- *
- * Note: All references to 17px in this section are linked to the height of the saw images.
- */
- 
-html, body {
-	width: 100%;
-	height: 100%;
-	margin: 0;
-	padding: 0;
-}
-
-article .container {
-	margin-top: -@sawed-image-height;
-}
-
-article, footer {
-	&:before {
-		position: relative;
-		display: block;
-		height: @sawed-image-height;
-		top: -@sawed-image-height;
-		content: '';
-	}
-	
-	width: 100%;
-	padding-bottom: @sawed-image-height;
-}
-
-article h2 {
-	text-align: center;
-}
-
-article h2 a {
-	/* Hide linkified titles */
-	&:hover, & {
-		text-decoration: none;
-		cursor: default;
-		color: inherit;
-	}
-}
-
-article .anchor-position-fixer {
-	position: relative;
-	top: -(@navbar-height+@sawed-image-height+20px);
-}
+@import "sections.less";
 
 /**
  * SECTION: Header
@@ -155,10 +109,3 @@ header table {
 	}
 }
 
-footer {
-	&:before {
-		background: url("../img/black-saw-12x4-top.png");
-	}
-	background: black;
-	color: @gray-light;
-}
