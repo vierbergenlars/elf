@@ -168,6 +168,9 @@
 								<div class="description"><?=$act['desc']?></div>
 							</div>
 						<?php } ?>
+							<div class="col-xs-12 vevent">
+								<p>Activiteiten in de kiesweek binnenkort beschikbaar</p>
+							</div>
 					</div>
 				</div>
 				<div class="col-sm-6">
