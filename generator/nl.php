@@ -199,6 +199,9 @@ EOL
 				'game'=>'2048',
 				'act'=>'Activiteiten',
 		),
+		'game'=> array(
+				'play_2048'=>'Speel nu ELF-2048!',
+		),
 		'meta' => array(
 				'description'=>'Wij zijn ELF!, d&eacute; opkomende ploeg voor het Industria praesidium \'14 - \'15',
 		),

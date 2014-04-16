@@ -123,8 +123,20 @@
 	</article>
 	<article id="sec-game">
 		<div class="anchor-position-fixer" id="game"></div>
-		<div class="game-2048">
-			<iframe src="2048/index.html" class="gameframe"></iframe>
+		<div class="game-2048 game-container">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<button class="btn btn-default btn-block btn-lg expand-game"
+							data-toggle="collapse" data-target="#game-2048">
+							<?=$data['game']['play_2048']?>
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="collapse" id="game-2048">
+				<iframe src="2048/index.html" class="gameframe"></iframe>
+			</div>
 		</div>
 	</article>
 	<article id="sec-act">

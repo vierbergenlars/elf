@@ -113,13 +113,22 @@ $('.vevent').each(function() {
 	var startDate = new Date($this.find('.dtstart').attr('datetime'));
 	var endDate = new Date($this.find('.dtend').attr('datetime'));
 	var now = new Date();
-	
-	console.log($this.children('.summary').text(), startDate, endDate, now);
-			
+				
 	// startDate < now < endDate
 	if(startDate < now && now < endDate) {
 		$this.addClass('activity-now');
 	} else if(now > endDate) {
 		$this.addClass('activity-passed');
 	}
+});
+
+
+/**
+ * Mark expand game button as active on click, and scroll to the game frame.
+ */
+$('.expand-game').click(function() {
+	var $this = $(this);
+	$this.toggleClass('active');
+	$.scrollTo($this.parents('.game-container').find('.gameframe'), 800);
+	
 });

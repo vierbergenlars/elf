@@ -36,12 +36,12 @@
 					</ul>
 				</div>
 				<div class="col-xs-12 col-sm-6">
-					<a href="<?=$data['meta']['root_url']?>" class="go go-home"><i
+					<a href="<?=$data['meta']['root_url']?>" class="btn btn-primary btn-block btn-lg"><i
 						class="fa fa-home fa-fw"></i> Go home!</a>
 				</div>
 				<div class="col-xs-12 col-sm-6">
 					<a href="<?=$data['meta']['root_url']?>#game"
-						class="go go-play-a-game"><i class="fa fa-gamepad fa-fw"></i> Go
+						class="btn btn-default btn-block btn-lg"><i class="fa fa-gamepad fa-fw"></i> Go
 						play a game!</a>
 				</div>
 			</div>
