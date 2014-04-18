@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>ELF! ~ Working our magic</title>
+<meta name="description" content="We are ELF!, the Engineer Liberation Front! We are running for the upcoming praesidium elections of Industria '14-'15. Vote ELF!">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<link rel="profile" href="http://microformats.org/profile/hcalendar">
+<!-- Facebook graph metadata -->
+<meta property="og:title" content="ELF!">
+<meta property="og:type" content="website">
+<meta property="og:image" content="http://vierbergenlars.github.io/elf/img/elf-social.png">
+<meta property="og:description" content="We are ELF!, the Engineer Liberation Front! We are running for the upcoming praesidium elections of Industria '14-'15. Vote ELF!">
+<meta proptery="fb:admins" content="100003609170934">
+
+<!-- Twitter cards metadata -->
+<meta property="twitter:card" content="summary">
+<meta property="twitter:title" content="ELF!">
+<meta property="twitter:description" content="We are ELF!, the Engineer Liberation Front! We are running for the upcoming praesidium elections of Industria '14-'15. Vote ELF!">
+<meta property="twitter:image" content="http://vierbergenlars.github.io/elf/img/elf-social.png">
+<meta property="twitter:site" content="elf_1415">
+
+<link rel="stylesheet" href="css/main.css">
+<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+<!-- <link rel="stylesheet/less" href="less/main.less">
+<script src="js/vendor/less-1.7.0.min.js"></script> -->
+
+<script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-49996245-2', 'elf-praesidium.be');
+  ga('send', 'pageview');
+
+</script>
+</head><body id="top" data-spy="scroll" data-target="#main-navigation">
+	<!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#main-navigation">
+					<span class="sr-only">Toggle navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#top">ELF!</a>
+			</div>
+			<div class="collapse navbar-collapse" id="main-navigation">
+				<ul class="nav navbar-nav">
+										<li><a href="#team">Team </a></li>
+										<li><a href="#prog">Goals </a></li>
+										<li><a href="#game">2048 </a></li>
+										<li><a href="#act">Activities </a></li>
+									</ul>
+				<ul class="nav navbar-nav navbar-right">
+										<li><a href="index.html">Nederlands </a></li>
+									</ul>
+			</div>
+		</div>
+
+	</nav>
+	<header>
+		<table><!-- Sorry, I had to :( -->
+			<tr>
+				<td><img class="header-logo" src="img/elf-header.png"></td>
+			</tr>
+		</table>
+		<h1 class="sr-only">ELF! <small>Working our magic</small></h1>
+	</header>
+	<article id="sec-team">
+		<div class="anchor-position-fixer" id="team"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<h2>
+						<a href="#team">Team</a>
+					</h2>
+				</div>
+			</div>
+			<div class="row">
+									<div class="col-xs-12 col-sm-6 col-md-4 team-pic-praeses team-pic">
+						<div class="flip-container row">
+							<div class="flipper">
+								<div class="flip-frontside col-xxs-12 col-xs-6 col-sm-12">
+								<h3>Praeses</h3>
+								</div>
+								<div class="flip-backside col-xxs-12 col-xs-6 col-sm-12">
+									<h3>Jochem</h3>
+									<p>Dear Industrians!</p>
+<p>My name's Jochem Jeunen and I am running for president of Industria next year. This year I worked as vice-president in the shadow of the president and now it's time to do my own thing together with my team and assure you guys of an awesome year!</p>
+<p>How will we do that? Together with my vice-president, we'll be motivating our team and make sure that everyone's helping out. That's how we'll provide you with some of the best activities in Leuven! On the other hand, important contacts with LOKO, Student Council, Group T, ... can't be neglected and that will also be my responsability.</p>
+<p>Of course I'm not doing this alone and I am proud to lead our team together with Sam. Some experienced Industrians, to assure a certain continuity, combined with youthful enthusiasm of our newcomers guarantee an awesome year! I am convinced that E.L.F! is ready to provide you, the students, with a year you will remember for the rest of your student career.</p>
+<p>Have fun!<br>
+Jochem</p>								</div>
+							</div>
+						</div>
+					</div>
+									<div class="col-xs-12 col-sm-6 col-md-4 team-pic-vice team-pic">
+						<div class="flip-container row">
+							<div class="flipper">
+								<div class="flip-frontside col-xxs-12 col-xs-6 col-sm-12">
+								<h3>Vice-Praeses</h3>
+								</div>
+								<div class="flip-backside col-xxs-12 col-xs-6 col-sm-12">
+									<h3>Sam</h3>
+																	</div>
+							</div>
+						</div>
+					</div>
+									<div class="col-xs-12 col-sm-6 col-md-4 team-pic-q team-pic">
+						<div class="flip-container row">
+							<div class="flipper">
+								<div class="flip-frontside col-xxs-12 col-xs-6 col-sm-12">
+								<h3>Quaestor</h3>
+								</div>
+								<div class="flip-backside col-xxs-12 col-xs-6 col-sm-12">
+									<h3>Stef &amp; Anke</h3>
+									<p>Dear beloved Industrians!</p>
+
+<p>We&rsquo;re Anke and Stef and we&rsquo;ll like to be next year&rsquo;s quaestors (or financial managers)! Whereas Stef has some Industria-experience as an editor & quaestor during the current year, Anke is the newbie who&rsquo;s ready to take matter into her own hands with tons of enthousiasm. Toghether we&rsquo;ll try to run the financial side of our favourite student union.</p>
+<p>We&rsquo;ll make sure that the necessary funding will go to (international-)cantusses, parties (maybe in a new D&eacute;li?) and other activities without ruining our cash-flow. No magic here but some solid money-management!</p>
+<p>This way, we&rsquo;ll attempt to make next year an even better one with more freaky experiences and stories to tell your great-grandchilderen!</p>
+<p>See you guys during the election week,<br>
+Anke &amp; Stef</p>								</div>
+							</div>
+						</div>
+					</div>
+									<div class="col-xs-12 col-sm-6 col-md-4 team-pic-aa team-pic">
+						<div class="flip-container row">
+							<div class="flipper">
+								<div class="flip-frontside col-xxs-12 col-xs-6 col-sm-12">
+								<h3>Ab-Actis</h3>
+								</div>
+								<div class="flip-backside col-xxs-12 col-xs-6 col-sm-12">
+									<h3>Maxim</h3>
+																	</div>
+							</div>
+						</div>
+					</div>
+									<div class="col-xs-12 col-sm-6 col-md-4 team-pic-ontspanning team-pic">
+						<div class="flip-container row">
+							<div class="flipper">
+								<div class="flip-frontside col-xxs-12 col-xs-6 col-sm-12">
+								<h3>Entertainment</h3>
+								</div>
+								<div class="flip-backside col-xxs-12 col-xs-6 col-sm-12">
+									<h3>Michiel &amp; Ruben</h3>
+									<p>Hello everyone,</p>
+<p>We are Michiel and Ruben, we are the candidates for entertainment as function for Industria. At this moment, there is no fakbar where we can keep our parties as our legendary &lsquo;Proffentap&rsquo;, &lsquo;Beurscaf&eacute;&rsquo;, &lsquo;Duvel Night&rsquo;,&hellip; But next year our fakbar might be back and then these parties and much more can take place. And what else, what keeps us from partying somewhere else?</p>
+<p>Therefore, we will organize next year the necessary cantusses and parties, so you can talk, sing, dance and drink as much as you want. We feel that that&rsquo;s not enough for you, so we will occasionally offer you something to eat and drink in front of Group T. You don&rsquo;t have to move too far to have a nice relaxation between two classes or after class. In short, we want to ensure you that there will be enough entertainment and relaxation.</p>
+<p>Remember: recreation is less boring than effort!</p>
+<p>Cheers!<br>
+Michiel &amp; Ruben</p>								</div>
+							</div>
+						</div>
+					</div>
+									<div class="col-xs-12 col-sm-6 col-md-4 team-pic-sm team-pic">
+						<div class="flip-container row">
+							<div class="flipper">
+								<div class="flip-frontside col-xxs-12 col-xs-6 col-sm-12">
+								<h3>Master of freshmen</h3>
+								</div>
+								<div class="flip-backside col-xxs-12 col-xs-6 col-sm-12">
+									<h3>Fulco &amp; Dries</h3>
+									<p>Commiltones!</p>
+<p>For a fair few years now the amount of freshmen has been steadily increasing and to ensure the follow up with the freshmen is continued we (Dries and Fulco) will be taking on the role of Schachtenmeester together next year.
+We both have been wandering around on Group T for quite some time now and we have the necessary experience to guide them and to get them involved with Industria.</p>
+
+<p>We would like the close the gap a bit between the freshmen and Industria to ensure that the future of Industria remains safe.
+We will attempt to do this by always being accessible for questions and to get as many freshmen to activities of Industria and being there ourselves aswell.
+Of course we will also make sure the traditional activities like freshmen weekend, baptizing, &hellip; will be perfect once more next year.</p>
+
+<p>Give the freshmen what they deserve next year. Vote E.L.F.!</p>
+
+<p>Peace out<br>
+Fulco and Dries</p>
+								</div>
+							</div>
+						</div>
+					</div>
+									<div class="col-xs-12 col-sm-6 col-md-4 team-pic-kd team-pic">
+						<div class="flip-container row">
+							<div class="flipper">
+								<div class="flip-frontside col-xxs-12 col-xs-6 col-sm-12">
+								<h3>Course service</h3>
+								</div>
+								<div class="flip-backside col-xxs-12 col-xs-6 col-sm-12">
+									<h3>Pieter &amp; Lotte</h3>
+									<p>Hey future engineers!</p>
+
+<p>Besides the partying and enjoying your student life, you still have to study a little bit to get that highly wanted diploma. For this you need all the right books and that will be our, Pieter Van Petegem and Lotte Verschuere, responsibility next year: The KD.</p>
+
+<p>We have a few goals we want to realize during the year. First we will try to convince the professors to publish their books by us, so you can buy them all at once.</p>
+<p>A next problem we would like to solve is the queue: we want to make the queue shorter, or at least we hope to make your time waiting a bit more enjoyable!</p>
+
+<p>Greetz<br>
+Lotte & Pieter</p>								</div>
+							</div>
+						</div>
+					</div>
+									<div class="col-xs-12 col-sm-6 col-md-4 team-pic-pc team-pic">
+						<div class="flip-container row">
+							<div class="flipper">
+								<div class="flip-frontside col-xxs-12 col-xs-6 col-sm-12">
+								<h3>PC</h3>
+								</div>
+								<div class="flip-backside col-xxs-12 col-xs-6 col-sm-12">
+									<h3>Lars</h3>
+									<p>System.out.println("Hello everyone!\n");</p>
+
+<p>I am Lars Vierbergen, and I will be taking the role of PC next year.</p>
+<p>New with Industria, but with a profound experience in programming and server maintenance.</p>
+<p>Firstly, the development on the brand new site that was promised last year will be continued.
+<br>Moreover, a new KD system is planned, to make the ordering, and more importantly the picking up of books to go more smoothly.
+<br>Of course, the industriLAN party will also be organised next year.</p>
+
+<p>System.exit(0); // Lars</p>								</div>
+							</div>
+						</div>
+					</div>
+									<div class="col-xs-12 col-sm-6 col-md-4 team-pic-br team-pic">
+						<div class="flip-container row">
+							<div class="flipper">
+								<div class="flip-frontside col-xxs-12 col-xs-6 col-sm-12">
+								<h3>BR</h3>
+								</div>
+								<div class="flip-backside col-xxs-12 col-xs-6 col-sm-12">
+									<h3>Laurens &amp; Bart</h3>
+																	</div>
+							</div>
+						</div>
+					</div>
+							</div>
+		</div>
+	</article>
+	<article id="sec-prog">
+		<div class="anchor-position-fixer" id="prog"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<h2>
+						<a href="#prog">Goals</a>
+					</h2>
+				</div>
+			</div>
+			<div class="row">
+									<div class="col-xxs-12 col-xs-6 col-sm-4">
+						<h3>Don&rsquo;t get blue</h3>
+						<p>We&rsquo;re KU Leuven now. That&rsquo;s only the beginning.</p>
+<p>It&rsquo;s a lot harder to organize and finance activities at Group T or somewhere else. That&rsquo;s why it&rsquo;s very important for Industria to work together with Group T and the Student Council to make a great year of the upcoming year.</p>
+<p>How? If we have a good communication with Group T and the Student Council and don&rsquo;t neglect that we can prevent lots of problems.</p>
+<p>And of course we still have to let our voices hear at the LOKO AV.</p>					</div>
+																			<div class="col-xxs-12 col-xs-6 col-sm-4">
+						<h3>Course Service</h3>
+						<p>We&rsquo;re in Leuven for our studies. The Course Service is the most important function to provide the students with books at the right time.</p>
+<p>We want to provide you with the right books at the right time so you can follow all your courses without any problem.</p>					</div>
+											<div class="clearfix visible-xs"></div>
+																			<div class="col-xxs-12 col-xs-6 col-sm-4">
+						<h3>Members</h3>
+						<p>Industria is a <em>student</em> organization. Meaning, doing activities for <em>you</em>, guys! We want <em>you</em> to enjoy some entertainment, some sport activities or cultural trips.</p>
+<p>Still know some fun activities? Do you have ideas what every student wants to do? Feel free to let us know!</p>
+<p>But don&rsquo;t hesitate to help us if you want! Do you want to join the best group of builders at the 24h run? No problem! Do you want to organize a fun activity with us? No problem! It&rsquo;s all a possibility!</p>
+
+<p>We want to involve you in our organisation and plan future activities based on your opinion!</p>					</div>
+																<div class="clearfix hidden-xs"></div>
+														<div class="col-xxs-12 col-xs-6 col-sm-4">
+						<h3>Business Relations</h3>
+						<p>In these financial uncertain times it&rsquo;s important that there enough funds to support the organisation
+so we can organize activities at the lowest prizes. But business relations is also important for the
+students to get a first contact with companies. We want to offer you workshops or interesting
+readings from people with experience. Those are only two examples of things BR can provide you.</p>					</div>
+											<div class="clearfix visible-xs"></div>
+																			<div class="col-xxs-12 col-xs-6 col-sm-4">
+						<h3>Future</h3>
+						<p>What&rsquo;s going to happen with Industria in the future? What about our &lsquo;fakbar&rsquo; D&eacute;lib&eacute;r&eacute;? What about
+the relation Industria-Student Council? How will life be at Group T within 10 years? Next year will
+be a very important year, to lay a foundation for our Industria successors and to assure they can still
+organize activities as Industria.</p>					</div>
+																	</div>
+		</div>
+	</article>
+	<article id="sec-game">
+		<div class="anchor-position-fixer" id="game"></div>
+		<div class="game-2048 game-container">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<button class="btn btn-default btn-block btn-lg expand-game"
+							data-toggle="collapse" data-target="#game-2048">
+							Play ELF-2048 now!						</button>
+					</div>
+				</div>
+			</div>
+			<div class="collapse" id="game-2048">
+				<iframe src="2048/index.html" class="gameframe"></iframe>
+			</div>
+		</div>
+	</article>
+	<article id="sec-act">
+		<div class="anchor-position-fixer" id="act"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<h2>
+						<a href="#act">Activities</a>
+					</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="row activity-list">
+													<div class="col-xs-12 vevent" data-location="50.874799,4.708097">
+								<h3 class="summary">ELF! @ Group T&emsp;<a href="https://facebook.com/events/825123334184359/" title="To facebook event" target="_blank"><i class="fa fa-facebook-square"></i></a></h3>
+								<p class="time">
+																	<i class="fa fa-clock-o fa-fw"></i> <time class="dtstart" datetime="2014-04-22T12:00+02:00">Tu 22/4 @ 12:00</time> - <time class="dtend" datetime="2014-04-22T18:00+02:00">18:00</time>
+								</p>
+								<p class="location"><i class="fa fa-map-marker fa-fw"></i> Group T</p>
+								<div class="description"><p>The Eastern holiday has ended and that can only mean one thing! The elections week is coming!</p>
+<p>Before we start the real elections week we&rsquo;re going to let you enjoy some more. Team ELF! provides bratwurst sandwiches and beer at democratic prices.</p>
+<p>See you guys Tuesday!</p></div>
+							</div>
+													<div class="col-xs-12 vevent">
+								<p>Activiteiten in de kiesweek binnenkort beschikbaar</p>
+							</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div>
+						<div id="map-canvas"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</article>
+
+		<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-6">
+					<p><div class="fb-like" data-colorscheme="dark" data-href="https://www.facebook.com/elfpraesidium" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div></p>
+					<p>&copy; 2014 ELF!</p>
+				</div>
+				<div class="col-xs-6">
+					<p>
+						<a
+							href="https://twitter.com/elf_1415" target="_blank"><i
+							class="fa fa-twitter fa-fw"></i> @elf_1415						</a>
+					</p>
+					<p>
+						<a href="https://facebook.com/elfpraesidium" target="_blank"><i
+							class="fa fa-facebook fa-fw"></i> /elfpraesidium </a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Facebook SDK -->
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "http://connect.facebook.net/en_GB/all.js#xfbml=1";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+	<script src="js/vendor/jquery-1.11.0.min.js"></script>
+	<script src="js/vendor/bootstrap.min.js"></script>
+	<script src="js/vendor/jquery.scrollTo.min.js"></script>
+
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbtcKJ6eM2yF8SS6E5j5wVUnoSmMc93-E&sensor=true"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
