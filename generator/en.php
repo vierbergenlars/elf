@@ -38,7 +38,12 @@ EOL
 						'title'=>'Ab-Actis',
 						'names'=>'Maxim',
 						'text'=><<<EOL
-
+<p>Dear Students,</p>
+<p>I am Maxim Laeveren and I am candidate Ab-actis for Industria. This year I took a part in Business Relations, which taught me a great deal and stimulated my interest in the core of Industria. As Ab-actis, or put in a different way secretary, I will be responsible to follow up meetings and make reports to smooth the communication within the praesidium. In addition to that I will handle Industria&rsquo;s insurances and articles.</p>
+<p>But we cannot forget to mention the cooperation system of Industria! I will make sure everyone has got something to do and thatshift rosters get filled in. Also, I&rsquo;m going to try to improve and expand the cooperationsystem and try to get every student motivated to help a hand at one of ouramazing activities. Work hard, party harder!</p>
+<p>So vote for E.L.F! if you want an awesome year full of activities where you also could be a part of!</p>
+<p>Sincerely,<br>
+Maxim</p>
 EOL
 				),
 				'ontspanning'=>array(
@@ -106,6 +111,10 @@ EOL
 						'title'=>'BR',
 						'names'=>'Laurens &amp; Bart',
 						'text'=><<<EOL
+<p>ABC. Always Be Closing.</p>
+<p>That were the golden tips that Alec Baldwin's character gave to his salesmen when they were on a dry streak. So that is what we will do! Always be closing the best deals for you! Like real Wolfs of Wall Street we go on the hunt for partners that are willing to aid us (and thus you in extension) to organise kick-ass parties, print our T-magazine and to feed the hungry with awesome bicky burgers!</p>
+<p>But is is not all fun and games that we make happen! Looking for a job? You would like to be an intern at an awesome company? Through workshops and lectures we try to bring you into contact with the top companies in the engineering sector!</p>
+<p>Any questions? Do not hesitate to bring us a visit!</p>
 EOL
 				)
 		),

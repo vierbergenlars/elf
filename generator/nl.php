@@ -221,7 +221,7 @@ EOL
 				'play_2048'=>'Speel nu ELF-2048!',
 		),
 		'languages'=> array(
-				'English'=>'under_construction.html',
+				'English'=>'en.html',
 		),
 		'meta' => array(
 				'description'=>'Wij zijn ELF!, d&eacute; opkomende ploeg voor het Industria praesidium \'14 - \'15',
