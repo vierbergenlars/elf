@@ -11,6 +11,7 @@ $('a').on('click', function(event) {
 	}
 });
 
+
 /**
  * Flip pictures on touch or click
  */
@@ -132,4 +133,9 @@ $('.expand-game').click(function() {
 	if($this.hasClass('active')) {
 		$.scrollTo($this, 800, {offset: -55+45});
 	}
+});
+
+$('.header-logo').click(function() {
+	$('body').addClass('ee');
+	setTimeout(function() {$('body').removeClass('ee');}, 4000);
 });
