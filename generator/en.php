@@ -18,7 +18,9 @@ EOL
 						'title'=>'Vice-Praeses',
 						'names'=>'Sam',
 						'text'=><<<EOL
-
+<p>I am Sam Loeys and running for Vice-President.</p>
+<p>This year I was responsible for International relations. It was een awesome post and I got to learn a lot of new people. But next year I will focus on the internal operation of Industria and support my awesome President, Jochem Jeunen. I will make sure the whole team is on the same wavelength and keep up their morale.</p>
+<p>Besides that I will also follow up all the different posts and help them in case of any problems. In general, make sure everything runs smooth.</p>
 EOL
 				),
 				'q'=> array(
