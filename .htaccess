@@ -1,1 +1,6 @@
 ErrorDocument 404 /404.html
+
+Redirect /en.html /
+Redirect gone /css/main.css
+RedirectMatch gone ^/img/team
+RedirectMatch gone ^/js
