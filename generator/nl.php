@@ -108,21 +108,6 @@ of op zijn minst aangenamer maken.</p>
 Lotte &amp; Pieter</p>
 EOL
 				),
-				'pc'=>array(
-						'title'=>'PC',
-						'names'=>'Lars',
-						'text'=><<<EOL
-<p>System.out.println("Hallo iedereen!\\n");</p>
-
-<p>Ik ben Lars Vierbergen, en kom op voor de functie PC volgend jaar.</p>
-<p>Nieuw bij Industria, maar met een grondige ervaring in het programmeren en onderhouden van servers.</p>
-<p>Ten eerste zal de gloednieuwe site die jullie vorig jaar beloofd is dit jaar verder ontwikkeld worden.
-<br>Verder staat er ook een nieuw KD systeem gepland, om het bestellen en vooral het afhalen van boeken veel vlotter te laten verlopen.
-<br>Uiteraard gaat de industriLAN party ook volgend jaar door.</p>
-
-<p>System.exit(0); // Lars</p>
-EOL
-				),
 				'br'=> array(
 						'title'=>'BR',
 						'names'=>'Laurens &amp; Bart',

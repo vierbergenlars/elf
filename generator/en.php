@@ -94,21 +94,6 @@ EOL
 Lotte & Pieter</p>
 EOL
 				),
-				'pc'=>array(
-						'title'=>'PC',
-						'names'=>'Lars',
-						'text'=><<<EOL
-<p>System.out.println("Hello everyone!\\n");</p>
-
-<p>I am Lars Vierbergen, and I will be taking the role of PC next year.</p>
-<p>New with Industria, but with a profound experience in programming and server maintenance.</p>
-<p>Firstly, the development on the brand new site that was promised last year will be continued.
-<br>Moreover, a new KD system is planned, to make the ordering, and more importantly the picking up of books to go more smoothly.
-<br>Of course, the industriLAN party will also be organised next year.</p>
-
-<p>System.exit(0); // Lars</p>
-EOL
-				),
 				'br'=> array(
 						'title'=>'BR',
 						'names'=>'Laurens &amp; Bart',
