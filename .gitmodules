@@ -1,6 +1,3 @@
-[submodule "2048"]
-	path = 2048
-	url = git://github.com/vierbergenlars/2048.git
 [submodule "less/bootstrap"]
 	path = less/bootstrap
 	url = git://github.com/vierbergenlars/bootstrap.git
