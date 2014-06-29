@@ -199,11 +199,7 @@ EOL
 		'title'=> array(
 				'team'=>'Team',
 				'prog'=>'Doelstellingen',
-				'game'=>'2048',
 				'act'=>'Activiteiten',
-		),
-		'game'=> array(
-				'play_2048'=>'Speel nu ELF-2048!',
 		),
 		'languages'=> array(
 				'English'=>'en.html',
